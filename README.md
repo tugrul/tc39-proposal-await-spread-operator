@@ -28,7 +28,7 @@ async function taskBar() {
 
 async function main() {
 
-    // const [foo, bar] = Promise.all([taskFoo(), taskBar()]);
+    // const [foo, bar] = await Promise.all([taskFoo(), taskBar()]);
     const [foo, bar] = [await...[taskFoo(), taskBar()]];
 
 }
